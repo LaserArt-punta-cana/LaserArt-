@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="LaserArt Punta Cana: Empresa especializada en corte y grabado láser para productos personalizados y decoraciones de alta calidad.">
+        <meta property="og:title" content="LaserArt Punta Cana">
+        <meta property="og:description" content="Arte láser en su máxima expresión. Cortes y grabados personalizados para todo tipo de productos y decoraciones.">
+        <meta property="og:image" content="ruta/a/tu/imagen.jpg">
+        <meta property="og:url" content="https://www.laserartpuntacana.com">
+        <meta property="og:type" content="website">
+        <title>LaserArt Punta Cana</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="img/logo.png">
+    </head>
+    
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#Productos">Productos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <!-- Icono de menú para móviles -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776; <!-- Unicode para el ícono de "hamburguesa" -->
+        </div>
+    </nav>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Sección de Portada -->
+    <header>
+        <img src="/img/logo.png" alt="Logo LaserArt Punta Cana - Corte y grabado láser" class="logo">
+        <h1>LaserArt Punta Cana</h1>
+        <h3>Tu momento, nuestro Arte</h3>
+    </header>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <p> En LaserArt Punta Cana, creamos recuerdos que te acompañan para siempre. Nos especializamos en personalizar tus experiencias a través del arte del grabado láser, transformando madera, metal y cristal en piezas únicas que cuentan tu historia.
+
+            ¿Buscas algo especial para sorprender a tus seres queridos? ¿O quizás un recuerdo épico de tu visita a Punta Cana? Nosotros nos encargamos. Rápido, creativo y totalmente a tu gusto, nuestros grabados son el detalle perfecto para inmortalizar tus momentos más especiales. ¡Déjanos llevar tu imaginación al siguiente nivel!
+            </p>
+    </section>
+    <h2>Servicios</h2>
+    <!-- Sección de Servicios -->
+    <section id="services">
+        
+        <article class="service-item">
+            <h3>Regalos Personalizados:</h3>
+            <p>Ofrecemos recuerdos únicos y personalizados grabados a láser, que sean una representación tangible de las experiencias vividas por los turistas en Punta Cana.</p>
+        </article>
+        <article class="service-item">
+            <h3>Diseños Pre-hechos:</h3>
+            <p>Tendré una selección de cuadros con diseños variados en la tienda. Cada diseño podrá personalizarse agregando la fecha o el nombre del cliente.</p>
+        </article>
+        <article class="service-item">
+            <h3>Servicios para empresas:</h3>
+            <p>Ofrecer personalización de logos o nombres de empresas en metal, madera y cristal. También brindaremos opciones para comercios como restaurantes, cafeterías y bares.</p>
+        </article>
+    </section>
+    <h2>Productos</h2>
+    <!-- Sección productos de Trabajos -->
+    <section id="Productos">
+        
+        <div class="gallery">
+            <article class="project">
+                <img src="img/pro.jpeg" alt="Proyecto de grabado en madera" class="project-img">
+                <h3>Grabados Láser en Madera:</h3>
+                <p> Historias personalizadas talladas a láser sobre madera de alta calidad. Perfectos para llevar contigo un recuerdo especial de tu viaje o para sorprender a tus amigos y familiares con un detalle exclusivo.</p>
+            </article>
+            <article class="project">
+                <img src="img/pro1.png" alt="Proyecto de corte en acrílico" class="project-img">
+                <h3>Grabados Láser en Metal:</h3>
+                <p> Imagina convertir un simple pedazo de metal en una obra de arte con tu diseño personalizado. Desde nombres y fechas hasta ilustraciones complejas, nuestros grabados en metal te permiten plasmar lo que quieras de manera elegante y duradera.</p>
+            </article>
+            <article class="project">
+                <img src="img/cristal.jpeg" alt="Proyecto de corte en acrílico" class="project-img">
+                <h3>Grabados Láser en Cristal:</h3>
+                <p>Dale un toque de elegancia a tus recuerdos con nuestros grabados en cristal. Ideal para crear piezas de alta calidad que capturan momentos especiales con un acabado sofisticado y detallado, perfectas para regalos inolvidables.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos.</p>
+        <form aria-label="Formulario de contacto" method="POST" action="https://formspree.io/f/xkgnbkrz">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Ej: 809-123-4567">
+        
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+        
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date">
+        
+            <button type="submit">Enviar</button>
+        </form>
+        <p class="confirmation-message" aria-live="polite"></p>        
+        <p>Email: laserartpuntacana@gmail.com</p>
+        <p>Teléfono: +1 (829) 654-8277</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <p>Síguenos en nuestras redes sociales:</p>
+    <p>
+        <a href="https://chat.whatsapp.com/GRoGOAh7IZMDndULBycJJR" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a> 
+        <a href="https://www.instagram.com/laserartpuntacana/profilecard/?igsh=OTM0bTZuMHZzdnB5" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </p>
+    <p>Ubicación: Bavaro, Punta Cana, República Dominicana</p>
+
+</body>
+    <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124829.10404206029!2d-68.3021810808278!3d18.58915002228988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8aeaa6eb3b48ab59:0x98c8e420567c8e57!2sPunta%20Cana!5e0!3m2!1ses!2sdo!4v1696292029680" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
+</html>
